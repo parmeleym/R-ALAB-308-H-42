@@ -147,17 +147,26 @@ R-ALAB 308H.4.2
 // Excited Kitten
 ////////////////////////////
 
-for(let i = 0; i < 20; i++){
-    let random =  Math.floor(Math.random() * 3);
-    if(i % 2){
-        if(random === 0){
-            console.log("...human... why you taking pictures of me...?");
-        }else if(random === 1){
-            console.log("...the catnip made me do it...");
-        }else if(random === 2){
-            console.log("...why does the red dot always get away...?");
-        }
-    }else{
-        console.log("Love me, pet me! HSSSSSS!");
-    }
-}
+// for(let i = 0; i < 20; i++){
+//     let random =  Math.floor(Math.random() * 3);
+//     if(i % 2){
+//         if(random === 0){
+//             console.log("...human... why you taking pictures of me...?");
+//         }else if(random === 1){
+//             console.log("...the catnip made me do it...");
+//         }else if(random === 2){
+//             console.log("...why does the red dot always get away...?");
+//         }
+//     }else{
+//         console.log("Love me, pet me! HSSSSSS!");
+//     }
+// }
+
+////////////////////////////
+// Find the Median
+////////////////////////////
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+let median = Math.floor(nums.length / 2);
+console.log(median);
