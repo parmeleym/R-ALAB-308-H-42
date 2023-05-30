@@ -90,55 +90,74 @@ R-ALAB 308H.4.2
 // Methods, Revisited
 ////////////////////////////
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-// Index of Titanic
-for(let i = 0; i <= favMovies.length; i++){
-    if(favMovies[i] === "Titanic"){
-        console.log("The element of Titanic is: " + i);
-    }
-}
+// // Index of Titanic
+// for(let i = 0; i <= favMovies.length; i++){
+//     if(favMovies[i] === "Titanic"){
+//         console.log("The element of Titanic is: " + i);
+//     }
+// }
 
-// Sorting
-favMovies.sort();
-console.log(favMovies);
+// // Sorting
+// favMovies.sort();
+// console.log(favMovies);
 
-// Pop
-console.log(favMovies.pop());
+// // Pop
+// console.log(favMovies.pop());
 
-// Push
-favMovies.push("Guardians of the Galaxy");
-console.log(favMovies);
+// // Push
+// favMovies.push("Guardians of the Galaxy");
+// console.log(favMovies);
 
-// Reverse
-console.log(favMovies.reverse());
+// // Reverse
+// console.log(favMovies.reverse());
 
-// Shift
-console.log(favMovies.shift());
+// // Shift
+// console.log(favMovies.shift());
 
-// Unshift
-console.log(favMovies.unshift());
-// Returns value of 18.
+// // Unshift
+// console.log(favMovies.unshift());
+// // Returns value of 18.
 
-// Splice && Slice Value Store
-let splicedElement = '';
-for(let i = 0; i <= favMovies.length; i++){
-    if(favMovies[i] === 'Django Unchained'){
-        splicedElement = favMovies.splice(i, 1, 'Avatar');
-    }
-}
-console.log(favMovies);
-console.log(splicedElement);
+// // Splice && Slice Value Store
+// let splicedElement = '';
+// for(let i = 0; i <= favMovies.length; i++){
+//     if(favMovies[i] === 'Django Unchained'){
+//         splicedElement = favMovies.splice(i, 1, 'Avatar');
+//     }
+// }
+// console.log(favMovies);
+// console.log(splicedElement);
 
-// Final Results
-console.log("");
-console.log("Final Results:");
-console.log(favMovies);
+// // Final Results
+// console.log("");
+// console.log("Final Results:");
+// console.log(favMovies);
 
-// Index of Fast and Furious
-console.log("");
-for(let i = 0; i <= favMovies.length; i++){
-    if(favMovies[i] === 'Fast and Furious'){
-        console.log("Fast and Furious Index: " + i);
+// // Index of Fast and Furious
+// console.log("");
+// for(let i = 0; i <= favMovies.length; i++){
+//     if(favMovies[i] === 'Fast and Furious'){
+//         console.log("Fast and Furious Index: " + i);
+//     }
+// }
+
+////////////////////////////
+// Excited Kitten
+////////////////////////////
+
+for(let i = 0; i < 20; i++){
+    let random =  Math.floor(Math.random() * 3);
+    if(i % 2){
+        if(random === 0){
+            console.log("...human... why you taking pictures of me...?");
+        }else if(random === 1){
+            console.log("...the catnip made me do it...");
+        }else if(random === 2){
+            console.log("...why does the red dot always get away...?");
+        }
+    }else{
+        console.log("Love me, pet me! HSSSSSS!");
     }
 }
