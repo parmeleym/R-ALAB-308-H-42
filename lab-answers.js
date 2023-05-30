@@ -78,10 +78,67 @@ R-ALAB 308H.4.2
 // Yell at the Ninja Turtles
 ////////////////////////////
 
-const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
-let turtleUpper = [];
-// const turtleUpper = turtles[0].toUpperCase();
-for (i = 0; i < 4; i++) {
-    turtleUpper.push(turtles[i].toUpperCase());
+// const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// let turtleUpper = [];
+// // const turtleUpper = turtles[0].toUpperCase();
+// for (i = 0; i < 4; i++) {
+//     turtleUpper.push(turtles[i].toUpperCase());
+// }
+// console.log(turtleUpper);
+
+////////////////////////////
+// Methods, Revisited
+////////////////////////////
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+// Index of Titanic
+for(let i = 0; i <= favMovies.length; i++){
+    if(favMovies[i] === "Titanic"){
+        console.log("The element of Titanic is: " + i);
+    }
 }
-console.log(turtleUpper);
+
+// Sorting
+favMovies.sort();
+console.log(favMovies);
+
+// Pop
+console.log(favMovies.pop());
+
+// Push
+favMovies.push("Guardians of the Galaxy");
+console.log(favMovies);
+
+// Reverse
+console.log(favMovies.reverse());
+
+// Shift
+console.log(favMovies.shift());
+
+// Unshift
+console.log(favMovies.unshift());
+// Returns value of 18.
+
+// Splice && Slice Value Store
+let splicedElement = '';
+for(let i = 0; i <= favMovies.length; i++){
+    if(favMovies[i] === 'Django Unchained'){
+        splicedElement = favMovies.splice(i, 1, 'Avatar');
+    }
+}
+console.log(favMovies);
+console.log(splicedElement);
+
+// Final Results
+console.log("");
+console.log("Final Results:");
+console.log(favMovies);
+
+// Index of Fast and Furious
+console.log("");
+for(let i = 0; i <= favMovies.length; i++){
+    if(favMovies[i] === 'Fast and Furious'){
+        console.log("Fast and Furious Index: " + i);
+    }
+}
